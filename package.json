@@ -1,0 +1,31 @@
+{
+  "name": "expense-tracker-api",
+  "version": "1.0.0",
+  "description": "Manage Expense Application",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthonyRanivoarison/expense-tracker-api.git"
+  },
+  "keywords": [
+    "Manage money",
+    "Get features from website"
+  ],
+  "author": "anthonyRanivoarison",
+  "bugs": {
+    "url": "https://github.com/anthonyRanivoarison/expense-tracker-api/issues"
+  },
+  "homepage": "https://github.com/anthonyRanivoarison/expense-tracker-api#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "pg": "^8.14.1"
+  }
+}
