@@ -7,14 +7,13 @@ const { Pool } = pg;
 
 // * Crete and export connection
 export const connection = new Pool({
-  host: process.env.PGHOST,
+  host: process.env.HOST,
   user: process.env.PGUSER,
-  password: process.env.PGPASSWORD,
-  database: process.env.PGDATABASE,
-  port: process.env.PORT
+  password: process.env.PASSWORD,
+  database: process.env.DATABASE
 });
 
 connection.connect((err) => {
   if (err) throw err;
-  console.log(`Connected to ${process.env.PGDATABASE} database.`);
+  console.log(`Connected to ${process.env.DATABASE} database.`);
 })

@@ -2,25 +2,28 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 
-const app = express();
+// Initialisation de l'application et configuration
 dotenv.config();
+const app = express();
+
+// Middleware
 app.use(express.json());
-
-app.use(cors());
 app.use(express.urlencoded({ extended: true }));
+app.use(cors());
 
-// * Get routes from router directory
+// Importation des routes
 import userRouter from "./router/users.js";
 
-// * Section about using routers
+// Utilisation des routes
 app.use("/user", userRouter);
 
+// Route par défaut
 app.get("/", (req, res) => {
-  res.send("This's the first part of the project");
-  res.end("End")
+  res.send("This is the first part of the project");
 });
 
-const PORT = process.env.PGPORT;
+// Démarrage du serveur
+const PORT = 3000;
 app.listen(PORT, () => {
-  console.log(`Server launched in http://localhost:${PORT}`);
+  console.log(`Server launched at http://localhost:${PORT}`);
 });
