@@ -1,20 +1,23 @@
 import express from "express";
 import dotenv from "dotenv";
-
-import router from "./router/users.js";
+import cors from "cors";
 
 const app = express();
 dotenv.config();
-
 app.use(express.json());
 
-// * Section about using routers
-app.use("/user", router);
+app.use(cors());
+app.use(express.urlencoded({ extended: true }));
 
-app.get("/test", (req, res) => {
-  res.send(
-    "This's the first part of the project, it's runnig with Node JS which use Express JS"
-  );
+// * Get routes from router directory
+import userRouter from "./router/users.js";
+
+// * Section about using routers
+app.use("/user", userRouter);
+
+app.get("/", (req, res) => {
+  res.send("This's the first part of the project");
+  res.end("End")
 });
 
 const PORT = process.env.PGPORT;

@@ -11,15 +11,10 @@ export const connection = new Pool({
   user: process.env.PGUSER,
   password: process.env.PGPASSWORD,
   database: process.env.PGDATABASE,
-  port: process.env.PORT,
+  port: process.env.PORT
 });
 
-const testConnection = async () => {
-  try {
-    await connection.query("SELECT 1");
-    console.log("Psql connected");
-  } catch (error) {
-    console.error("Error", error);
-  }
-};
-testConnection();
+connection.connect((err) => {
+  if (err) throw err;
+  console.log(`Connected to ${process.env.PGDATABASE} database.`);
+})

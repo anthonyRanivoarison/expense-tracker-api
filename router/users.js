@@ -1,14 +1,15 @@
 import express from "express";
 import { connection } from "../database/connection.js";
 
-const router = express.Router();
+const userRouter = express.Router();
 
 // * First user router
-router.get("/", (req, res) => {
+userRouter.get("/", (req, res) => {
+  res.send("User router");
   connection.query("SELECT * FROM users", (err, result) => {
     if (err) throw err;
     console.log(result);
   });
 });
 
-export default router;
+export default userRouter;
