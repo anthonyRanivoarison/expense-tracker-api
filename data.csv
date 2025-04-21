@@ -1,0 +1,14 @@
+expense_name,amount_spent,user_id,expense_category
+Humburger,10000,53cb24e4-ecd5-42a3-ba71-1c3bd05fc1ee,9b5c837c-cc4d-4c23-ac8b-2b1fbbd4b8dc
+Groceries,150,53cb24e4-ecd5-42a3-ba71-1c3bd05fc1ee,9b5c837c-cc4d-4c23-ac8b-2b1fbbd4b8dc
+Rent,1200,53cb24e4-ecd5-42a3-ba71-1c3bd05fc1ee,9b5c837c-cc4d-4c23-ac8b-2b1fbbd4b8dc
+Electricity Bill,100,53cb24e4-ecd5-42a3-ba71-1c3bd05fc1ee,9b5c837c-cc4d-4c23-ac8b-2b1fbbd4b8dc
+Internet,50,53cb24e4-ecd5-42a3-ba71-1c3bd05fc1ee,9b5c837c-cc4d-4c23-ac8b-2b1fbbd4b8dc
+Gym Membership,40,53cb24e4-ecd5-42a3-ba71-1c3bd05fc1ee,9b5c837c-cc4d-4c23-ac8b-2b1fbbd4b8dc
+Streaming Service,15,53cb24e4-ecd5-42a3-ba71-1c3bd05fc1ee,9b5c837c-cc4d-4c23-ac8b-2b1fbbd4b8dc
+Fuel,60,53cb24e4-ecd5-42a3-ba71-1c3bd05fc1ee,9b5c837c-cc4d-4c23-ac8b-2b1fbbd4b8dc
+Dining Out,80,53cb24e4-ecd5-42a3-ba71-1c3bd05fc1ee,9b5c837c-cc4d-4c23-ac8b-2b1fbbd4b8dc
+Books,30,53cb24e4-ecd5-42a3-ba71-1c3bd05fc1ee,9b5c837c-cc4d-4c23-ac8b-2b1fbbd4b8dc
+Clothing,100,53cb24e4-ecd5-42a3-ba71-1c3bd05fc1ee,9b5c837c-cc4d-4c23-ac8b-2b1fbbd4b8dc
+Donation,200,53cb24e4-ecd5-42a3-ba71-1c3bd05fc1ee,9b5c837c-cc4d-4c23-ac8b-2b1fbbd4b8dc
+Savings,500,53cb24e4-ecd5-42a3-ba71-1c3bd05fc1ee,9b5c837c-cc4d-4c23-ac8b-2b1fbbd4b8dc

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backend API Overview</title>
+
+    <!-- Poppins font & Tailwind CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
+      defer
+    ></script>
+  </head>
+  <body>
+    <style>
+      body {
+        font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      section {
+        padding: 10px 20px;
+        width: 600px;
+        height: 250px;
+      }
+    </style>
+    <h1
+      class="text-4xl font-bold text-sky-600 text-center mb-6 p-4 bg-gray-100"
+    >
+      API Description - Manage Expense App
+    </h1>
+    <main class="main flex flex-row items-center justify-around gap-3 mx-6">
+      <section
+        class="usergeneral-info border-2 border-gray-100 rounded-xl shadow-lg hover:shadow-xl transition delay-150 duration-300 hover:scale-102"
+      >
+        <h2 class="text-2xl font-bold text-center">General Informations</h2>
+        <h3 class="api-name text-xl">
+          <strong>API Name:</strong> express-tracker-api
+        </h3>
+        <br />
+        <h5 class="base-url text-xl">
+          <strong>BASE URL:</strong>
+          <a href="/" class="text-gray-700">http://localhost:3000</a>
+        </h5>
+        <br />
+        <p class="api-type text-xl"><strong>API Type:</strong> Rest</p>
+        <br />
+        <p class="data-format text-xl"><strong>Data format:</strong> JSON</p>
+        <br />
+        <p class="authors"></p>
+      </section>
+      <section
+        class="urls p-3 border-2 border-gray-100 rounded-xl shadow-lg hover:shadow-xl transition delay-150 duration-300 hover:scale-102"
+      >
+        <h2 class="text-2xl font-bold text-center">Main URLs</h2>
+        <p class="text-xl text-gray-500">
+          <a href="http://localhost:3000/user"
+            ><span class="text-sky-700 underline">/user</span></a
+          >
+          : Get all users who already have log in this application.
+        </p>
+        <hr />
+        <p class="text-xl text-gray-500">
+          <a href="http://localhost:3000/category"
+            ><span class="text-sky-700 underline">/category</span></a
+          >
+          : Return diverse categories which can get an expense.
+        </p>
+        <hr />
+        <p class="text-xl text-gray-500">
+          <a href="http://localhost:3000/expense"
+            ><span class="text-sky-700 underline">/expense</span></a
+          >
+          : Retrieve detailed expense information for all users.
+        </p>
+      </section>
+      <section
+        class="usergeneral-info border-2 border-gray-100 rounded-xl shadow-lg hover:shadow-xl transition delay-150 duration-300 hover:scale-102"
+      >
+        <h2 class="text-2xl font-bold text-center">General Informations</h2>
+        <h3 class="api-name text-xl">
+          <strong>API Name:</strong> express-tracker-api
+        </h3>
+        <br />
+        <h5 class="base-url text-xl">
+          <strong>BASE URL:</strong>
+          <a href="/" class="text-gray-700">http://localhost:3000</a>
+        </h5>
+        <br />
+        <p class="api-type text-xl"><strong>API Type:</strong> Rest</p>
+        <br />
+        <p class="data-format text-xl"><strong>Data type:</strong> JSON</p>
+        <br />
+        <p class="authors"></p>
+      </section>
+    </main>
+    <footer class="mt-6 bg-gray-100 p-4">
+      <p class="text-center text-gray-500">
+        &copy; 2025 Manage Expense App. Powered by Tsiory Antonio. All rights
+        reserved.
+      </p>
+    </footer>
+  </body>
+</html>

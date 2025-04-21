@@ -4,9 +4,13 @@
   "description": "Manage Expense Application",
   "main": "app.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "type": "module",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/anthonyRanivoarison/expense-tracker-api.git"
@@ -26,7 +30,14 @@
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
+    "fast-csv": "^5.0.2",
     "pg": "^8.14.1",
     "uuid-v4": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.14.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   }
 }
