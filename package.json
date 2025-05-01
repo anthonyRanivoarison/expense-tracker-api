@@ -32,6 +32,7 @@
     "express": "^5.1.0",
     "fast-csv": "^5.0.2",
     "pg": "^8.14.1",
+    "serverless-http": "^3.2.0",
     "uuid-v4": "^0.1.0"
   },
   "devDependencies": {

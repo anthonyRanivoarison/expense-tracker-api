@@ -16,7 +16,7 @@ diverseQueries.get("/user&expense", (req, res) => {
 diverseQueries.get("/expensePerMonth", (req, res) => {
   const getExpenseMonth = `
   SELECT 
-    expense_name, amount_spent, user_id, expense_category 
+    expense_name, amount_spent, user_id, expense_category, created_at
   FROM expense
     INNER JOIN users ON expense.user_id = users.id_user 
     INNER JOIN category ON expense.expense_category = category.id_category`;
