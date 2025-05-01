@@ -1,4 +1,4 @@
-import express from "express";
+import express, { Router } from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import path from "path";
@@ -24,6 +24,7 @@ app.use("/user", userRouter);
 app.use("/category", categoryRouter);
 app.use("/expense", expenseRouter);
 app.use("/queries", diverseQueries);
+app.use("/api", Router)
 
 // * As default route, we have a the API's description in one HTML page
 app.get("/", (req, res) => {
