@@ -32,7 +32,3 @@ app.get("/", (req, res) => {
 
 export const handler = ServerlessHttp(app)
 
-const PORT = process.env.PORT;
-app.listen(PORT, () => {
-  console.log(`Server launched at http://localhost:${PORT}`);
-});
