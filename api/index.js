@@ -1,10 +1,7 @@
 import app from "../app.js";
-import { Router } from "express";
 import serverless from "serverless-http";
 import path from "path";
 import { fileURLToPath } from "url";
-
-app.use("/api", Router)
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
