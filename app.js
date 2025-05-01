@@ -1,8 +1,6 @@
-import express, { Router } from "express";
+import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
-import path from "path";
-import { fileURLToPath } from "url";
 
 dotenv.config();
 const app = express();
@@ -10,9 +8,6 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 import userRouter from "./router/users.js";
 import categoryRouter from "./router/category.js";
@@ -23,10 +18,5 @@ app.use("/user", userRouter);
 app.use("/category", categoryRouter);
 app.use("/expense", expenseRouter);
 app.use("/queries", diverseQueries);
-
-// * As default route, we have a the API's description in one HTML page
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "app.html"));
-});
 
 export default app;
