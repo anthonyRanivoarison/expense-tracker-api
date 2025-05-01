@@ -15,10 +15,10 @@ app.use(cors());
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-import userRouter from "./router/users.js";
-import categoryRouter from "./router/category.js";
-import expenseRouter from "./router/expense.js";
-import diverseQueries from "./router/diverseQueries.js";
+import userRouter from "../router/users.js";
+import categoryRouter from "../router/category.js";
+import expenseRouter from "../router/expense.js";
+import diverseQueries from "../router/diverseQueries.js";
 
 app.use("/user", userRouter);
 app.use("/category", categoryRouter);
